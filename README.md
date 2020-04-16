@@ -1,29 +1,14 @@
 # teste_zappt
 
-## Project setup
+## Project
 ```
-npm install
+This project is the reproduction of the "Zappt Challenge" test.
+
 ```
 
-### Compiles and hot-reloads for development
+### Requirements
 ```
-npm run serve
-```
+The sass used is found in the App.vue file
 
-### Compiles and minifies for production
+The test preview can be accessed through the link:: https://teste-zappt.herokuapp.com/
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
