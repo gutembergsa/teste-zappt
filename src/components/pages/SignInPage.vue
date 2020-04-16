@@ -7,7 +7,7 @@
       <Carousel class="pa-0"/>
       <!-- formulario signIn -->
       <v-col class="pa-7">
-        <!-- titulo principal a direita -->
+        <!-- titulo principal a direita para desktop -->
         <Title class="title-desktop"/>
         <!-- Form -->
         <v-form ref="signInForm">
