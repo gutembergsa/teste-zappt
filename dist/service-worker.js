@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.edb1b5c13b4e580cac4c49fc07e8e872.js"
+  "/teste-zappt/precache-manifest.3fd9e967a88464c6c2c44dd9c2972f1b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "teste_zappt"});
