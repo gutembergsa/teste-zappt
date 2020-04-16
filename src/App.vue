@@ -1,32 +1,63 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app >
+    <v-content>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </v-content>
+  </v-app>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&display=swap');
+
+$titleBreakpoint:800px;
+$textInputForm: 12px;
+
+//define font size for text inside inputs
+@mixin fontFamilySetter ($familyName){
+  font-family: $familyName;
 }
 
-#nav {
-  padding: 30px;
+.input-font{
+  @include fontFamilySetter('Comfortaa');
+  font-size: $textInputForm !important;
+  font-weight: 900 !important;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+//define breakpoints to show/hide the title
+@mixin hidden($breakpointType){
+  @if($breakpointType){
+    @media (max-width: $titleBreakpoint){
+      @content
+    }
+  }
+  @else{
+    @media(min-width: $titleBreakpoint){
+      @content
+    }
+  }
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
+.title{
+  &-desktop{
+    @include hidden(true){
+      display: none;
+      visibility: hidden;
+    }
+  }
+  &-mobile{
+    @include hidden(false){
+      display: none;
+      visibility: hidden;
     }
   }
 }
 </style>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>

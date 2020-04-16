@@ -5,11 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    isLogged: true
   },
   mutations: {
+    changeUserState (state) {
+      state.isLogged = !state.isLogged
+    }
   },
   actions: {
-  },
-  modules: {
+    increment (context) {
+      context.commit('changeUserState')
+    }
   }
 })
