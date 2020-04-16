@@ -1,7 +1,5 @@
 module.exports = {
-  build:{
-    assetPublicPath: "/teste-zappt/"
-  },
+  publicPath: "/teste-zappt/",
   "transpileDependencies": [
     "vuetify"
   ]
