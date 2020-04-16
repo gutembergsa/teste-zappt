@@ -1,12 +1,13 @@
 <template>
   <v-container fluid pa-0>
     <v-layout row wrap>
-      <!-- titulo principal a direita -->
+      <!-- titulo principal a direita para mobile -->
       <Title class="title-mobile"/>
       <!-- carrosel imagens -->
       <Carousel class="pa-0"/>
       <!-- formulario signIn -->
       <v-col>
+        <!-- titulo principal a direita para desktop -->
         <Title class="title-desktop pt-10 pr-12"/>
         <!-- Form -->
         <v-form ref="registerForm">

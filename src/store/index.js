@@ -13,7 +13,7 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    increment (context) {
+    triggerchangeUser (context) {
       context.commit('changeUserState')
     }
   }
